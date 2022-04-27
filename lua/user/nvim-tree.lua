@@ -62,6 +62,10 @@ nvim_tree.setup {
     update_cwd = true,
     ignore_list = {},
   },
+  system_open = {
+    cmd = nil,
+    args = {},
+  },
   filters = {
     dotfiles = true,
     custom = {},
@@ -108,5 +112,9 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
     preserve_window_proportions = false,
+  },
+  trash = {
+    cmd = "trash",
+    require_confirm = true,
   },
 }
